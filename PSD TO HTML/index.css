@@ -162,8 +162,7 @@ nav{
 }
 .label-downArrow>span{
   font-size: 14px;
-
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
 
 }
 .nav-items{
@@ -171,7 +170,7 @@ nav{
   padding-top: 6px;
   height: 50px;
   gap:16px;
-  margin-left: 40px;
+  margin-left: 64px;
 
 }
 
