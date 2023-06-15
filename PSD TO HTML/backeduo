@@ -1,0 +1,563 @@
+
+  <div class="top-grid">
+            <div></div>
+            <div class="top-center">
+                <div class="icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                    <i class="fa fa-vk" aria-hidden="true"></i>
+                    <i class="fa fa-google-plus"></i>
+                    <i class="fa fa-behance"></i>
+                    <i class="fa fa-dribbble"></i>
+                    <i class="fa fa-instagram"></i>
+                </div>
+
+                <div class="setting">
+                    <div class="signIn">
+                        <img src="./mui-icons/1x/baseline_account_circle_white_18dp.png" alt="avatar" class="mui-icon">
+                        <span class="text">
+                            SIGN IN
+                        </span>
+
+                    </div>
+                    <div class="v-bar"></div>
+                    <div class="lang-container">
+                        <img src="./mui-icons/1x/baseline_language_white_18dp.png" alt="avatar" class="mui-icon">
+        
+                        <div class="select">
+                            <span class="text">
+                                ENG
+                            </span>
+                            <!-- <i class="material-icons expand2">expand_more</i> -->
+                            <!-- <img src="./mui-icons/1x/round_expand_more_white_24dp.png" alt="avatar" class="expand"> -->
+                            <span class="material-icons arrowDown">
+                                keyboard_arrow_down
+                            </span>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div></div>
+        </div>
+
+        <!-- 
+        <div class="main-grid-container">
+            <div class="main-grid">
+                <div class="arrowContainerLeft">
+                    <span class="material-icons arrowLeft">
+                        keyboard_arrow_left
+                    </span>
+                </div>
+                <div class="main-grid-center">
+
+                </div>
+                <div class="arrowContainerRight ">
+                    <span class="material-icons arrowRight">
+                        keyboard_arrow_right
+                    </span>
+                </div>
+            </div>
+        </div> -->
+
+
+
+        final
+
+
+        html 
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <title>PSD->HTML</title>
+</head>
+<body>
+
+    <header>
+
+        <div class="main-container">
+            <div class="top-layer">
+                <div class="icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                    <i class="fa fa-vk" aria-hidden="true"></i>
+                    <i class="fa fa-google-plus"></i>
+                    <i class="fa fa-behance"></i>
+                    <i class="fa fa-dribbble"></i>
+                    <i class="fa fa-instagram"></i>
+                </div>
+
+                <div class="setting">
+                    <div class="signIn">
+                        <div class="mui-container">
+                            <span class="material-icons md-18">
+                                account_circle
+                            </span>
+
+                        </div>
+                        <span class="text">
+                            SIGN IN
+                        </span>
+
+                    </div>
+                    <div class="v-bar"></div>
+                    <div class="lang-container">
+                        <div class="mui-container">
+                            <span class="material-icons md-18">
+                                language
+                            </span>
+
+                        </div>        
+                        <div class="select">
+                            <span class="text2">
+                                ENG
+                            </span>
+                            <div class="arrowContainer">
+                                <span class="material-icons md-18 arrowDown">
+                                    keyboard_arrow_down
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+      
+
+
+
+    </header>
+    
+</body>
+</html>
+
+
+css  @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:ital@1&family=Playfair+Display&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f5f5f5;
+    font-family: "Montserrat";
+}
+/* ---------------------------HEADER--------------------------- */
+header{
+    background-color: #191919;
+
+}
+
+.arrowContainer{
+    display: flex;
+    align-items: center;
+    width: 15px; 
+    overflow: hidden;
+}
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.main-container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+}
+
+.main-layer{
+}
+
+.top-layer{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-left: 0;
+}
+.icons>i{
+
+    opacity: 0.4;
+    color: #ffffff;
+    font-family: "FontAwesome";
+
+}
+
+.setting{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    justify-content: space-between;
+    
+}
+.signIn{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+}
+
+
+.text{
+    opacity: 0.502;
+    font-size: 11px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    margin-top: 1px;
+    letter-spacing: 0.8px;
+
+}
+.text2{
+    opacity: 0.502;
+    font-size: 11px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    margin-top: 1px;
+    letter-spacing: 0.15px;
+}
+
+.v-bar{
+    opacity: 0.380;
+    width: 1px;
+    height: 20px;
+    margin-top: 1px;
+    background-color: #b4b4b4;
+
+}
+
+.lang-container{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.mui-container{
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    opacity: 0.390;
+    color: #ffffff !important;
+}
+.mui-icon{
+
+    font-size: 18px;
+}
+/* TOP GRID */
+
+.arrowDown{
+    opacity: 0.512;
+    color: #ffffff;
+    width: 100%;
+    height: auto;
+}
+.select{
+    display: flex;
+    align-items: center;
+    gap: 1.5px;
+}
+
+/* MAIN GRID */
+.main-grid-container{
+
+}
+/* .main-grid{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 375px 1170px 375px;
+    opacity: 0.871;
+    background-color: #212121;
+} */
+.arrowContainerLeft{
+    display: flex;
+    color: #ffffff;
+    margin-top: 363px;
+    margin-bottom: 395px;
+}
+.arrowLeft{
+    margin-left: 27.5px;
+    font-size: 42px !important;
+}
+
+.arrowContainerRight{
+    display: flex;
+    flex-direction: row-reverse;
+    color: #ffffff;     
+    margin-top: 363px;
+    margin-bottom: 395px
+
+}
+
+
+
+.arrowRight{
+    font-size: 42px !important;
+    margin-right: 27.5px;
+
+}
+
+
+<!-- new -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <title>PSD->HTML</title>
+</head>
+<body>
+
+    <header>
+
+        <div class="main-container">
+            <div class="top-layer">
+                <div class="icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                    <i class="fa fa-vk" aria-hidden="true"></i>
+                    <i class="fa fa-google-plus"></i>
+                    <i class="fa fa-behance"></i>
+                    <i class="fa fa-dribbble"></i>
+                    <i class="fa fa-instagram"></i>
+                </div>
+
+                <div class="setting">
+                    <div class="signIn">
+                        <div class="mui-container">
+                            <span class="material-icons md-18">
+                                account_circle
+                            </span>
+
+                        </div>
+                        <span class="text">
+                            SIGN IN
+                        </span>
+
+                    </div>
+                    <div class="v-bar"></div>
+                    <div class="lang-container">
+                        <div class="mui-container">
+                            <span class="material-icons md-18">
+                                language
+                            </span>
+
+                        </div>        
+                        <div class="select">
+                            <span class="text">
+                                ENG
+                            </span>
+                            <div class="arrowContainer">
+                                <span class="material-icons md-18 arrowDown">
+                                    keyboard_arrow_down
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+      
+
+
+
+    </header>
+    
+</body>
+</html>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:ital@1&family=Playfair+Display&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f5f5f5;
+    font-family: "Montserrat";
+}
+/* ---------------------------HEADER--------------------------- */
+header{
+    background-color: #191919;
+
+}
+
+.arrowContainer{
+    display: flex;
+    align-items: center;
+    width: 15px; 
+    overflow: hidden;
+}
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.main-container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+}
+
+.main-layer{
+}
+
+.top-layer{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-left: 0;
+}
+.icons>i{
+
+    opacity: 0.4;
+    color: #ffffff;
+    font-family: "FontAwesome";
+
+}
+
+.setting{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    justify-content: space-between;
+    
+}
+.signIn{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+}
+
+
+.text{
+    opacity: 0.502;
+    font-size: 11px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    margin-top: 1px;
+    letter-spacing: 1px;
+
+}
+
+.v-bar{
+    opacity: 0.380;
+    width: 1px;
+    height: 20px;
+    margin-top: 1px;
+    background-color: #b4b4b4;
+
+}
+
+.lang-container{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.mui-container{
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    opacity: 0.390;
+    color: #ffffff !important;
+}
+.mui-icon{
+
+    font-size: 18px;
+}
+/* TOP GRID */
+
+.arrowDown{
+    opacity: 0.512;
+    color: #ffffff;
+    width: 100%;
+    height: auto;
+}
+.select{
+    display: flex;
+    align-items: center;
+    gap: 1.5px;
+}
+
+/* MAIN GRID */
+.main-grid-container{
+
+}
+/* .main-grid{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 375px 1170px 375px;
+    opacity: 0.871;
+    background-color: #212121;
+} */
+.arrowContainerLeft{
+    display: flex;
+    color: #ffffff;
+    margin-top: 363px;
+    margin-bottom: 395px;
+}
+.arrowLeft{
+    margin-left: 27.5px;
+    font-size: 42px !important;
+}
+
+.arrowContainerRight{
+    display: flex;
+    flex-direction: row-reverse;
+    color: #ffffff;     
+    margin-top: 363px;
+    margin-bottom: 395px
+
+}
+
+
+
+.arrowRight{
+    font-size: 42px !important;
+    margin-right: 27.5px;
+
+}
