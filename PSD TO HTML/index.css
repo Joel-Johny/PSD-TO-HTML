@@ -217,7 +217,9 @@ nav{
   font-size: 42px;
   font-weight: 900;
   line-height: 1.2;
-  letter-spacing: 6px;
+  letter-spacing: 1px;
+  width: 75%;
+  margin-left: 8px;
 }
 
 
