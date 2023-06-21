@@ -11,7 +11,7 @@ body{
   font-family: "Montserrat";
 }
 a {
-  color: #8e8e8e;
+  color: white;
   text-decoration: none; /* no underline */
 }
 
@@ -78,25 +78,27 @@ header{
 .top-layer{
   height: 40px;;
 }
-.icons{
+.icons-socialmedia-container{
   gap: 14px;
   padding-left: 1px;
 }
-.icons>i{
+.icons-socialmedia-container>a>i{
   color: #8e8e8e;
   font-family: "FontAwesome";
 }
 
 .setting{
-  gap: 13px;
   padding-right: 1px;
+  gap: 13px;
 }
 .signIn{
   gap: 7px;
+  padding-right: 1px;
+
 }
 
 
-.text{
+.setting-tag{
   font-size: 11px;
   color: #aaaaaa;
   font-weight: 400;
@@ -143,6 +145,8 @@ nav{
   letter-spacing: 1px;
   font-size: 24px;
   line-height: 25.6px;
+  color: #ffffff;
+
 
   /* height: 50px; */
 }
@@ -173,18 +177,18 @@ nav{
   padding-top: 6px;
   height: 50px;
   gap:15px;
-  margin-left: 50px;
+  margin-left: 54px;
 
 }
 
 
 .nav-icons{
-  color: white;
   gap: 11px;
-  padding-right: 14px;
+  padding-right: 15px;
 
 }
-.nav-icons>span{
+.nav-icons>a{
+  color: white;
   padding-top: 1px;
   padding-left: 0.5px;
 
@@ -195,14 +199,14 @@ nav{
   background-color: #b4b4b4;
 }
 
-.title{
+.inspirational-quote-container{
   flex-direction: column;
   margin-top: 210px;
   color: white;
   
 }
 
-.title>p{
+.inspirational-quote-container>p{
   font-weight: 400;
   padding-left: 1px;
   padding-top: 2px;
@@ -236,6 +240,7 @@ nav{
   font-size: 16px;
   letter-spacing: 1.5px;
   color: #ffffff;
+  margin-left: 2px;
   /* font-family: "Montserrat"; */
 }
 
@@ -247,7 +252,7 @@ nav{
   color: white;
 
 }
-.profile-info>img{
+.profile-image{
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -257,9 +262,8 @@ nav{
 .profile-name{
   font-size: 14px;
   letter-spacing: 0.45px;
-  margin-top: 15px;
+  margin-top: 11px;
   font-weight: 700;
-  padding-right: 1px;
 }
 .post-date{
   font-size: 12px;
@@ -267,18 +271,19 @@ nav{
   margin-top: 8px;
   display: flex;
   gap: 8px;
+  padding-left: 4px;
 }
 .account-stats{
   display: flex;
-  gap:28px;
+  gap:27px; 
   margin-top: 33px;
-  margin-right: 6px;
+  margin-right: 4px;
 
 }
 .icon-label{
-  gap: 5px;
+  gap: 6px;
 }
-.label-text{font-size: 12px;letter-spacing: 0.7px;}
+.label-text{font-size: 12px;letter-spacing: 0.7px;padding-top: 1px;}
 /* MAIN CONTENT */
 
 .suggestion-filter-container{margin-left: auto;margin-right: auto;background-color: white;height: 60px;}
