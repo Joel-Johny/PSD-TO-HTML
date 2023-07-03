@@ -353,21 +353,27 @@ main>div{
 } 
 .top-card-image-container{
   background-image: url("./images/body/main/seashore.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   height:420px ;
   color: white;
   flex-direction: column;
+  position: relative;
 
 }
 .top-card-image-container>a{
-  margin-top: 20%;
+  /* margin-top: 20%; */  
   margin-left: 1px;
 }
 
 .tagline-post-stats{
-  width: 100%;
+  position: absolute;
   padding-left: 20px;
   padding-right: 18px;
-  margin-top: 18%;
+  width: 100%;
+  bottom: 3.5%;
+  /* margin-top: 18%; */
 }
 .tagline-post-stats>a{
   font-size: 11px;
@@ -388,24 +394,24 @@ main>div{
   letter-spacing: 0.62px;
   font-size: 16px;
 }
-.post-user-details,.card2-post-user-details,.card3-post-user-details{
+.post-user-details{
   margin-top: 17px;
   margin-left: 20px;
   color: #000000;
   padding-right: 10px;
   padding-bottom:20.82px;
 }
-.post-user-details>div>a,.card2-post-user-details>div>a,.card3-post-user-details>div>a{
+.post-user-details>div>a,.card2-post-user-details>div>a,.card3-post-user-details>div>a,.card4-post-user-details>div>a{
   width: 50px;
   height: 50px;
 }
-.post-user-details>div>div,.card2-post-user-details>div>div,.card3-post-user-details>div>div{
+.post-user-details>div>div,.card2-post-user-details>div>div,.card3-post-user-details>div>div,.card4-post-user-details>div>div{
   display: flex;
   flex-direction: column;
   padding-bottom: 5px;
   padding-left: 9px;
 }
-.post-user-details>div>div>a,.card2-post-user-details>div>div>a,.card3-post-user-details>div>div>a{
+.post-user-details>div>div>a,.card2-post-user-details>div>div>a,.card3-post-user-details>div>div>a,.card4-post-user-details>div>div>a{
   padding: 0;
   margin-top: 7.5px;
 }
@@ -415,21 +421,20 @@ main>div{
 .card2{
   border-radius: 5px;
   display: flex;
-  height: 165px;
   background-color: white;
 }
 .card2-image-container,.card3-image-container{
   border-radius: 5px;
-
+  position: relative;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 31.75%;
+  width: 56%;
   color: white;
   flex-direction: column;
 }
-.card2-info-container{
-  width:68.25%
+.card2-image-container>div{
+  bottom: 9%;
 }
 .card2-image1{
   background-image: url("./images/body/main/hatLady.png");
@@ -441,60 +446,66 @@ main>div{
   background-image: url("./images/body/main/sea.png");
 }
 .card2-image-container>a,.card3-image-container>a{
-  margin-top: 16.5%;
+  /* margin-top: 16.5%; */
   margin-left: 1px;
 }
 
-.card2-image-container>div,.card3-image-container>div{
-  margin-top: 10%;
-}
+
 .card2-image-container>div>div,.card3-image-container>div>div{
   gap:19px;
   padding-bottom: 2px;
 }
-.card2-post-title-description,.card3-post-title-description{
+.card2-post-title-description{
   padding: 10px 18px 15px 19px;
   border-bottom: 1px solid rgb(224,224,224);
 }
 .card2-post-title-description>h4,.card3-post-title-description>h4{
   letter-spacing: 0.4px;
   }
-.card2-post-title-description>p,.card3-post-title-description>p{
+.card2-post-title-description>p{
 font-size: 14px;
 font-family: "Open Sans";
 letter-spacing: 0.58px;
 line-height: 21px;
 padding-top: 8px;
 }
-.card2-post-user-details,.card3-post-user-details{
+.card2-post-user-details{
   margin-top: 7px;
   padding-left: 1px;
+  margin-left: 20px;
+  color: #000000;
+  padding-right: 10px;
+  padding-bottom:10px;
 }
-.card2-post-user-details>a,.card3-post-user-details>a{
+.card2-post-user-details>a,.card3-post-user-details>a,.card4-post-user-details>a{
   padding-top: 2px;
 }
 
 .cards3-container{
   background-color: #f5f5f5;
-  height: 420px;
+  /* height: 420px; */
   display: flex;
   gap:20px
 }
 
 .card3{
   border-radius: 5px;
-  width: 260px;
   background-color: white;
 }
-.card3>div{
+.card3-image-container{
   height: 160px;
-  width: 100%;
+  width: 260px;
+}
+.card3-image-container>div{
+  bottom: 6.5%;
 }
 .card3-post-title-description{
   padding-top: 11px;
   padding-left: 20px;
-  padding-bottom: 24px;
+  padding-bottom: 25px;
   padding-right: 20px;
+  border-bottom: 1px solid rgb(224,224,224);
+
 }
 .card3-post-title-description>h4{
   font-size: 14px;
@@ -504,10 +515,16 @@ padding-top: 8px;
   letter-spacing: 0.5943px;
   line-height: 21px;
   padding-top: 7px;
+  font-size: 14px;
+  font-family: "Open Sans";
 }
 .card3-post-user-details{
   margin-top: 12px;
   margin-left: 19px;
+  padding-left: 1px;
+  color: #000000;
+  padding-right: 10px;
+  padding-bottom:19px;
 }
 .card3-post-user-details>a {
   padding-top: 20px;
@@ -520,6 +537,79 @@ padding-top: 8px;
 }
 .card3-image3{
   background-image: url("images/body/main/persona.png");
+}
+
+.cards4-container{
+  background-color: #f5f5f5;
+  display: flex;
+  gap:20px
+}
+
+.card4{
+  border-radius: 5px;
+  background-color: white;
+}
+
+.card4-image-container{
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  flex-direction: column;
+  height: 300px;
+  width: 400px;
+  position: relative;
+}
+.card4-image-container>div{
+  bottom: 5.5%;
+  padding-left: 19px;
+}
+.card4-image-container>div>div{
+  gap:20px
+}
+.card4-post-title-description{
+  padding-top: 13px;
+  padding-left: 20px;
+  padding-bottom: 14px;
+  padding-right: 20px;
+  border-bottom: 1px solid rgb(224,224,224);
+}
+.card4-post-title-description>p{
+  font-family: "Open Sans";
+  letter-spacing: 0.59px;
+  line-height: 26px;
+  padding-top: 5px;
+}
+.card4-post-user-details{
+  margin-top: 12px;
+  margin-left: 19px;
+  padding-left: 1px;
+  color: #000000;
+  padding-right: 10px;
+  padding-bottom:15px;
+}
+.card4-image1{
+  background-image: url("images/body/main/mountains.png");
+}
+.card4-image2{
+  background-image: url("images/body/main/studyTable.png");
+}
+.selected{
+color: #3f51b5;
+
+}
+.more{
+  margin-left: auto ;
+  margin-top: 22px;
+  color: #303f9f;
+  gap: 8px;
+}
+.more>a{
+  border-radius: 50%;
+  background-color: white;
+  font-size: 24px;
+  padding: 9px;
 }
 aside{
   background-color: white;
