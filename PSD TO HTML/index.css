@@ -496,9 +496,11 @@ padding-top: 8px;
   height: 160px;
   width: 260px;
 }
-.card3-image-container>div{
-  bottom: 6.5%;
-}
+.prev-next-btn{padding:6px;background-color: white;color: #3f51b5;position: absolute;top:37%}
+.previous-btn{left: 4%;}
+.next-btn{right: 4%;}
+.card3-image-container>div{  bottom: 6.5%;}
+
 .card3-post-title-description{
   padding-top: 11px;
   padding-left: 20px;
@@ -539,78 +541,33 @@ padding-top: 8px;
   background-image: url("images/body/main/persona.png");
 }
 
-.cards4-container{
-  background-color: #f5f5f5;
-  display: flex;
-  gap:20px
+.cards4-container{  background-color: #f5f5f5;  display: flex;  gap:20px}
+
+.card4{  border-radius: 5px;  background-color: white;
 }
 
-.card4{
-  border-radius: 5px;
-  background-color: white;
+.card4-image-container{  border-radius: 5px;  background-position: center;  background-size: cover;  background-repeat: no-repeat;  color: white;  flex-direction: column;  height: 300px;  width: 400px; position: relative;
 }
+.card4-image-container>div{  bottom: 5.5%;  padding-left: 19px;}
 
-.card4-image-container{
-  border-radius: 5px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white;
-  flex-direction: column;
-  height: 300px;
-  width: 400px;
-  position: relative;
-}
-.card4-image-container>div{
-  bottom: 5.5%;
-  padding-left: 19px;
-}
-.card4-image-container>div>div{
-  gap:20px
-}
-.card4-post-title-description{
-  padding-top: 13px;
-  padding-left: 20px;
-  padding-bottom: 14px;
-  padding-right: 20px;
-  border-bottom: 1px solid rgb(224,224,224);
-}
-.card4-post-title-description>p{
-  font-family: "Open Sans";
-  letter-spacing: 0.59px;
-  line-height: 26px;
-  padding-top: 5px;
-}
-.card4-post-user-details{
-  margin-top: 12px;
-  margin-left: 19px;
-  padding-left: 1px;
-  color: #000000;
-  padding-right: 10px;
-  padding-bottom:15px;
-}
-.card4-image1{
-  background-image: url("images/body/main/mountains.png");
-}
-.card4-image2{
-  background-image: url("images/body/main/studyTable.png");
-}
-.selected{
-color: #3f51b5;
+.card4-image-container>div>div{  gap:20px }
 
-}
-.more{
-  margin-left: auto ;
-  margin-top: 22px;
-  color: #303f9f;
-  gap: 8px;
-}
-.more>a{
-  border-radius: 50%;
-  background-color: white;
-  font-size: 24px;
-  padding: 9px;
-}
+.card4-post-title-description{  padding-top: 13px;  padding-left: 20px;  padding-bottom: 14px;  padding-right: 20px;  border-bottom: 1px solid rgb(224,224,224);}
+
+.card4-post-title-description>p{  font-family: "Open Sans";  letter-spacing: 0.59px;  line-height: 26px;  padding-top: 5px;}
+
+.card4-post-user-details{  margin-top: 12px;  margin-left: 19px;  padding-left: 1px;  color: #000000;  padding-right: 10px;  padding-bottom:15px;}
+
+.card4-image1{  background-image: url("images/body/main/mountains.png");}
+
+.card4-image2{  background-image: url("images/body/main/studyTable.png");}
+
+.selected{color: #3f51b5;}
+
+.more{  margin-left: auto ;  margin-top: 22px;  color: #303f9f;  gap: 8px;}
+
+.more>a{  border-radius: 50%;  background-color: white;  font-size: 24px;  padding: 9px;}
+
 aside{
   background-color: white;
   overflow-x: visible;
