@@ -707,30 +707,31 @@
                     <div class="category-choices-container">
                         <h3 class="aside-section-heading">CATEGORIES</h3>
                         <div class="choices-container flex-col-align">
-                            <div class="category-label-count h-align-spacebw">
-                                <a href="#photo">Photography</a>
-                                <a href="#photo" class="category-count">195</a>
-                            </div>
 
-                            <div class="category-label-count h-align-spacebw">
-                                <a href="#illustration">Illustration</a>
-                                <a href="#illustration" class="category-count">15</a>
-                            </div>
+                            <a href="#photo" class="category-label-count h-align-spacebw">
+                                <span>Photography</span>
+                                <span class="category-count">195</span>
+                            </a>
 
-                            <div class="category-label-count h-align-spacebw">
-                                <a href="#graphic">Graphic Design</a>
-                                <a href="#graphic" class="category-count">36</a>
-                            </div>
+                            <a href="#illustration" class="category-label-count h-align-spacebw">
+                                <span>Illustration</span>
+                                <span class="category-count">15</span>
+                            </a>
 
-                            <div class="category-label-count h-align-spacebw">
-                                <a href="#WebDesign">Web design</a>
-                                <a href="#WebDesign" class="category-count">220</a>
-                            </div>
+                            <a href="#graphic" class="category-label-count h-align-spacebw">
+                                <span>Graphic Design</span>
+                                <span class="category-count">36</span>
+                            </a>
 
-                            <div class="category-label-count no-border h-align-spacebw">
-                                <a href="#videography">Videography</a>
-                                <a href="#videography" class="category-count">17</a>
-                            </div>
+                            <a href="#webdesign" class="category-label-count h-align-spacebw">
+                                <span>Web design</span>
+                                <span class="category-count">220</span>
+                            </a >
+
+                            <a href="#videography" class="category-label-count border-remove h-align-spacebw">
+                                <span>Videography</span>
+                                <span class="category-count">17</span>
+                            </a>
                         </div>
                     </div>
 
@@ -738,13 +739,13 @@
                         <h3 class="aside-section-heading">SUBSCRIBE</h3>
                         <form class="form-name-email flex-col-align" action="" id="form1">
                             <div class="flex-col-align">
-                                <label for="">Name</label>
-                                <input type="text" placeholder="Igor Ten">
+                                <label for="form1-name">Name</label>
+                                <input type="text" placeholder="Igor Ten" id="form1-name" name="form1-name">
                             </div>
 
                             <div class="flex-col-align">
-                                <label for="">Email</label>
-                                <input type="text" placeholder="email@address.com">
+                                <label for="form1-email">Email</label>
+                                <input type="text" placeholder="email@address.com" id="form1-email" name="form1-email">
                             </div>
                     
                         </form>
@@ -772,7 +773,90 @@
                             <a href="#recent" class="vh-align">RECENT POST</a>
                             <a href="#popular" class="vh-align">POPULAR POST</a>
                         </div>
+                        <div class="widget-posts-container flex-col-align">
+
+                            <div class="widget-post h-align">
+                                <div class="widget-image-container widget-image-1"></div>
+                                <div class="widget-post-details flex-col-align">
+                                        <div class="post-date-comment-count h-align-spacebw v-align">
+                                            <a href="#post-date">April 28,2016</a>
+                                            <div class="comments-count h-align">
+                                                <a href="#comment" class="material-icons md-14">
+                                                    question_answer
+                                                </a>
+                                                <a href="#comment" class="widget-comment-count">17</a>
+                                            </div>
+                                        </div>
+                                        <a href="#gotopost" class="widget-post-heading">Duis commodo elit sed nisi molestie</a>
+                                </div>
+                            </div>
+                            
+
+                            <div class="widget-post h-align">
+                                <div class="widget-image-container widget-image-2"></div>
+                                <div class="widget-post-details flex-col-align">
+                                    <div class="post-date-comment-count h-align-spacebw v-align">
+                                        <a href="#post-date">April 28,2016</a>
+                                        <div class="comments-count h-align">
+                                            <a href="#comment" class="material-icons md-14">
+                                                question_answer
+                                            </a>
+                                            <a href="#comment" class="widget-comment-count">17</a>
+                                        </div>
+                                    </div>
+                                        <a href="#gotopost" class="widget-post-heading">Duis commodo elit sed nisi molestie</a>
+                                </div>
+                            </div>
+
+                            <div class="widget-post h-align">
+                                <div class="widget-image-container widget-image-3"></div>
+                                <div class="widget-post-details flex-col-align">
+                                    <div class="post-date-comment-count h-align-spacebw v-align">
+                                        <a href="#post-date">April 28,2016</a>
+                                        <div class="comments-count h-align">
+                                            <a href="#comment" class="material-icons md-14">
+                                                question_answer
+                                            </a>
+                                            <a href="#comment" class="widget-comment-count">17</a>
+                                        </div>
+                                    </div>
+                                        <a href="#gotopost" class="widget-post-heading">Duis commodo elit sed nisi molestie</a>
+                                </div>
+                            </div>
+
+                            <div class="widget-post h-align border-remove">
+                                <div class="widget-image-container widget-image-4 "></div>
+                                <div class="widget-post-details flex-col-align">
+                                    <div class="post-date-comment-count h-align-spacebw v-align">
+                                        <a href="#post-date">April 28,2016</a>
+                                        <div class="comments-count h-align">
+                                            <a href="#comment" class="material-icons md-14">
+                                                question_answer
+                                            </a>
+                                            <a href="#comment" class="widget-comment-count">17</a>
+                                        </div>
+                                    </div>
+                                        <a href="#gotopost" class="widget-post-heading">Duis commodo elit sed nisi molestie</a>
+                                </div>
+                            </div>
+                            
+                        </div>
                     </div>
+
+                    <div class="tags-container">
+                        <h3 class="aside-section-heading">TAGS</h3>
+                        <div class="tags-buttons-container h-align-fstart">
+                            <a href="#photography">Photography</a>
+                            <a href="#photography">Webdesign</a>
+                            <a href="#photography">Youtube</a>
+                            <a href="#photography">Envato</a>
+                            <a href="#photography">Art</a>
+                            <a href="#photography">Themeforest</a>
+                            <a href="#photography">Illustration</a>
+                        </div>
+
+                    </div>
+
                 </div>
 
 
