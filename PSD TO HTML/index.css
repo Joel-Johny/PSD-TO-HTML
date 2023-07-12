@@ -623,8 +623,7 @@ aside:after{   content: "";  position: absolute;  background: white;  top: 0;  b
 
 /* FOOTER SECTION */
 footer{background-color: #212121;}
-/* .images-row-container{ min-width: 240px;height: 240px} */
-/* .images-row-container>a,.carousel-items>a{  background-position: center;  background-size:  contain;  background-repeat: no-repeat; width: 100%;min-height: 240px;aspect-ratio: 1/1;} */
+
 .insta-image1{background-image: url("./images/footer/row-images/insta_pic1.png");}
 .insta-image2{background-image: url("./images/footer/row-images/insta_pic2.png");}
 .insta-image3{background-image: url("./images/footer/row-images/insta_pic3.png");}
@@ -695,15 +694,20 @@ li{list-style: none;}
 /* .level-0:hover>ul{display: block;} */
 .show-sub-menu{display: block;}
 
-/* infinite slider */
+/* slider */
+/* .infinite-slider-carousel{display: flex; width: 200%;}
+.infinite-slider-carousel-items{  display:flex;  animation: moves 15s linear infinite;width: 100%;}
+.infinite-slider-carousel-items>a{background-position: center;  background-size:  cover;  background-repeat: no-repeat;min-height: 240px;width: 100%;}
+.infinite-slider-carousel-items:hover{animation-play-state: paused;} */
 
-.infinite-slider-carousel-items{  display:flex;  animation: moves 10s linear infinite;}
-.infinite-slider-carousel-items>a{background-position: center;  background-size:  cover;  background-repeat: no-repeat;min-height: 240px;min-width: 240px;}
-.infinite-slider-carousel-items:hover{animation-play-state: paused;}
+
+.images-row-container{width: 200%;}
+.images-row-container>div>img,.images-row-container>div>a{background-position: center;  background-size:  100% 100%;  background-repeat: no-repeat;min-height: 240px;width: 100% ;min-width: 240px;}
+.slide{width: 100%;animation: moves 10s linear infinite;}
+.images-row-container:hover>div{animation-play-state: paused;}
 @keyframes moves{
   
-  0%{    transform:translateX(100vw)  }
-  100%{    transform: translateX(-100vw)  }
+  0%{    transform:translateX(0)  }
+  100%{    transform: translateX(calc(-100%))  }
 
 }
-
