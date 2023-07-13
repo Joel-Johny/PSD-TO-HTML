@@ -119,7 +119,7 @@ function startAnimation(){
   let slider_width=document.getElementsByClassName("slide3")[0].childElementCount*240;
   let remaining_width=screen_size-slider_width;
   let travel_percentage=(remaining_width/screen_size)*100
-  console.log(screen_size,slider_width,remaining_width,travel_percentage)
+  // console.log(screen_size,slider_width,remaining_width,travel_percentage)
   if(remaining_width>=0){
     document.getElementsByClassName("slide3")[0].animate([
       { transform: "translateX(0)" }, //0%
@@ -144,27 +144,29 @@ function startAnimation_slide4(){
   let sliderElement=document.getElementsByClassName("slide4")[0];
   let slider_width=sliderElement.childElementCount*240;
   let remaining_width=screen_size-slider_width;
-  let clones_needed=Math.ceil(remaining_width/sliderWidth);
+  let clones_needed=Math.max(Math.ceil(remaining_width/sliderWidth),1);
+  console.log(remaining_width/sliderWidth,clones_needed)
 
-
-  console.log(clones_needed)
   //removing all extra clones
-  while (sliderContainer.firstChild) {
+  while (sliderContainer.childElementCount>1) {
     sliderContainer.removeChild(sliderContainer.firstChild);
   }
   for(let i =1;i<=clones_needed+1;i++){
     const clone = sliderElement.cloneNode(true);
     sliderContainer.appendChild(clone);
   }
-  console.log(screen_size,slider_width,remaining_width)
+  // console.log(screen_size,slider_width,remaining_width)
   if(remaining_width>=0){
-    document.getElementsByClassName("slide4")[0].animate([
-      { transform: "translateX(0)" }, //0%
-      { transform: "translateX(-100%)" }//100%
-    ], {
-      duration: 3000,
-      iterations: Infinity
-    });
+    const slide4_array=[...document.getElementsByClassName("slide4")]
+    slide4_array.map((eachSlide)=>{
+      eachSlide.animate([
+        { transform: "translateX(0)" }, //0%
+        { transform: "translateX(-100%)" }//100%
+      ], {
+        duration: 3000,
+        iterations: Infinity
+      });
+    })
   }
   
 }
