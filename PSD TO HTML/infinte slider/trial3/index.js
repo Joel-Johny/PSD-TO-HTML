@@ -156,7 +156,7 @@ function startAnimation_slide4(){
     sliderContainer.appendChild(clone);
   }
   // console.log(screen_size,slider_width,remaining_width)
-  if(remaining_width>=0){
+ 
     const slide4_array=[...document.getElementsByClassName("slide4")]
     slide4_array.map((eachSlide)=>{
       eachSlide.animate([
@@ -167,7 +167,7 @@ function startAnimation_slide4(){
         iterations: Infinity
       });
     })
-  }
+  
   
 }
 window.addEventListener("resize",startAnimation_slide4)
